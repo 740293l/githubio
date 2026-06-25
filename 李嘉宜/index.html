@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的家乡——西安</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-width: 1200px;
+            max-width: 1400px;
+            margin: 0 auto;
+            background: linear-gradient(90deg, #d6ee9e, #fff9e6);
+            font-family: "Microsoft YaHei", SimSun, serif;
+        }
+        /* 顶部标题栏 */
+        .top-bar {
+            background-color: #e2efb8;
+            padding: 16px 30px;
+            font-size: 16px;
+            color: #222;
+        }
+        /* 顶部横幅大图 西安城墙 */
+        .banner-img {
+            width: 100%;
+            height: 420px;
+            display: block;
+            object-fit: cover;
+        }
+        /* 板块标题统一样式 */
+        .section-title {
+            background: linear-gradient(90deg, #e6b86c, #f2b0a0);
+            margin: 30px 20px 20px;
+            padding: 12px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            border-radius: 8px;
+        }
+        /* 我的家乡 图文左右布局 */
+        .about-wrap {
+            display: flex;
+            gap: 25px;
+            padding: 0 30px;
+            align-items: flex-start;
+        }
+        .about-img {
+            width: 360px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        .about-text {
+            flex: 1;
+            font-size: 15px;
+            line-height: 1.7;
+            color: #222;
+        }
+        /* 三图一行（景点、传统文化） */
+        .three-row {
+            display: flex;
+            gap: 15px;
+            padding: 0 30px;
+        }
+        .three-row img {
+            width: calc((100% - 30px) / 3);
+            height: 320px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        /* 美食四图横向排列 */
+        .food-row {
+            display: flex;
+            gap: 12px;
+            padding: 0 30px;
+        }
+        .food-row img {
+            width: calc((100% - 36px) / 4);
+            height: 280px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        /* 底部黑色页脚 */
+        footer {
+            background-color: #121212;
+            color: #dddddd;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部标题栏 -->
+    <div class="top-bar">
+        我的家乡
+    </div>
+
+    <!-- 首屏大图：西安城墙护城河 -->
+    <img class="banner-img" src="https://img0.baidu.com/it/u=1249033131,3079292329&fm=253&fmt=auto&app=138&f=JPEG?w=1920&h=800" alt="西安城墙全景">
+
+    <!-- 我的家乡板块 -->
+    <div class="section-title">我的家乡</div>
+    <div class="about-wrap">
+        <img class="about-img" src="https://img2.baidu.com/it/u=3299743121,3842010312&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=600" alt="西安古典园林">
+        <div class="about-text">
+            西安古称长安，坐拥三千余年建城史、千余年建都史，是十三朝古都，丝绸之路起点。远古蓝田猿人、半坡遗址见证华夏文明；西周丰镐开创礼乐文明，汉长安开辟丝路，连通欧亚。隋大兴城奠定规整城址，盛唐长安规模宏大，万国来朝，商贸文化交融，是世界级大都会。唐宋后都城地位不复存在。明代定名西安，修筑古城墙。近代西安事变推动抗日统一战线形成。如今西安留存兵马俑、大雁塔、明城墙等众多古迹，承载周秦汉唐盛世文脉，是承载中华千年历史的文化名城。
+        </div>
+    </div>
+
+    <!-- 景点推荐 3张图：大雁塔、钟楼、兵马俑 -->
+    <div class="section-title">景点推荐</div>
+    <div class="three-row">
+        <img src="https://img0.baidu.com/it/u=1996636840,293302324&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=600" alt="大雁塔">
+        <img src="https://img2.baidu.com/it/u=2048610922,383220312&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=600" alt="西安钟楼">
+        <img src="https://img2.baidu.com/it/u=133323400,198320412&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=600" alt="秦始皇兵马俑">
+    </div>
+
+    <!-- 特色美食 4张图：烤串、凉皮、葫芦鸡、油糕 -->
+    <div class="section-title">特色美食</div>
+    <div class="food-row">
+        <img src="https://img1.baidu.com/it/u=1292403422,3799410211&fm=253&fmt=auto&app=138&f=JPEG?w=600&h=500" alt="西安烤串">
+        <img src="https://img2.baidu.com/it/u=3832401131,2789211044&fm=253&fmt=auto&app=120&f=JPEG?w=600&h=500" alt="陕西凉皮">
+        <img src="https://img2.baidu.com/it/u=1097439230,393221023&fm=253&fmt=auto&app=138&f=JPEG?w=600&h=500" alt="葫芦鸡">
+        <img src="https://img2.baidu.com/it/u=3344322244,3201003341&fm=253&fmt=auto&app=120&f=JPEG?w=600&h=500" alt="油糕">
+    </div>
+
+    <!-- 传统文化 3张图：剪纸、竹编、皮影 -->
+    <div class="section-title">传统文化</div>
+    <div class="three-row">
+        <img src="https://img2.baidu.com/it/u=3782210333,1320041210&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=600" alt="陕西剪纸">
+        <img src="https://img2.baidu.com/it/u=2234230130,3911200343&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=600" alt="传统竹编工艺">
+        <img src="https://img2.baidu.com/it/u=3922011340,2334110242&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=600" alt="华县皮影戏">
+    </div>
+
+    <!-- 底部页脚 -->
+    <footer>
+        传统文化，个人网页
+    </footer>
+</body>
+</html>
